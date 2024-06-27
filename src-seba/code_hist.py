@@ -63,7 +63,7 @@ std_list = [] #desviacion de cada esp. lat
 dr = 0.2
 
 for lat in range(1,21):
-    for i in range(1):
+    for i in range(5):
         MAES_list = []
         autoencoder = NNAutoencoder(99, lat, dr)
         autoencoder.load_state_dict(torch.load(os.path.join("..","Save_Models",dicc_model[lat])))
